@@ -3,7 +3,7 @@
 
 ## Dataset
 Model w pierwszej kolejności był trenowany na zbiorze danych [DOTA](https://captain-whu.github.io/DOTA/index.html), którego wymiar został zredukowany do 4 klas: "['basketball', 'football', 'tennis', 'track']". Zawiera on 476 zdjęć w zbiorze "train" i 85 zdjęć w zbiorze "valid". 
-Następnie model był uczony danymi pozyskanymi przez nas. Nasz dataset zawiera on 496 zdjęć w zbiorze "train" i 80 zdjęć w zbiorze "valid". Zestaw danych zawierał 1169 adnotacji na zdjęciach. Ilości obiektów dla każdej klasy:
+Następnie model był uczony danymi pozyskanymi przez nas. Nasz dataset zawiera 496 zdjęć w zbiorze "train" i 80 zdjęć w zbiorze "valid". Zestaw danych zawierał 1169 adnotacji na zdjęciach. Ilości obiektów dla każdej klasy:
 
 ```
 {
@@ -51,16 +51,16 @@ Wykorzystane biblioteki i ich wersje są w pliku requirements.txt.
 
 ## Results
 ### Przykłady poprawnej detekcji boisk
-![good1](readme/example_good1.jpeg)
-![good2](readme/example2_good.jpeg)
-![good3](readme/example3_good.jpeg)
-![good4](readme/example4_good.jpeg)
+![good1](readme/example_good1.jpg)
+![good2](readme/example2_good.jpg)
+![good3](readme/example3_good.jpg)
+![good4](readme/example4_good.jpg)
 
 ### Przykłady niepoprawnej detekcji boisk
-![bad1](readme/example_bad1.jpeg)
-![bad2](readme/example_bad2.jpeg)
-![bad3](readme/example_bad3.jpeg)
-![bad4](readme/example_bad4.jpeg)
+![bad1](readme/example_bad1.jpg)
+![bad2](readme/example_bad2.jpg)
+![bad3](readme/example_bad3.jpg)
+![bad4](readme/example_bad4.jpg)
 
 ### Znormalizowana macierz pomyłek dla zbioru walidacyjnego
 ![CMN](model_from_our_data/runs/detect/train5/confusion_matrix_normalized.png)
