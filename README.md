@@ -4,7 +4,9 @@
 ## Dataset
 Model w pierwszej kolejności był trenowany na zbiorze danych [DOTA](https://captain-whu.github.io/DOTA/index.html), którego wymiar został zredukowany do 4 klas: "['basketball', 'football', 'tennis', 'track']". Zawiera on 476 zdjęć w zbiorze "train" i 85 zdjęć w zbiorze "valid". 
 Następnie model był uczony danymi pozyskanymi przez nas. Nasz dataset zawiera on 496 zdjęć w zbiorze "train" i 80 zdjęć w zbiorze "valid". Jest on dostępny pod [linkiem](https://universe.roboflow.com/krzy3chu/sport-fields-pphlq/dataset/6). Wszystkie znaczniki (bounding boxy) zostały wykonane ręcznie z wykorzystaniem interface'u roboflow. Zdjęcia są przechowywane w formacje ".jpg", a adnotacje w pliku ".txt". Dane do modelu były wczytywane z wykorzystaniem pliku "data.yaml" o następującej strukturze:
-`
+
+```
+{
 train: ../train/images
 val: ../valid/images
 test: ../test/images
@@ -18,7 +20,8 @@ roboflow:
   version: 6
   license: MIT
   url: https://universe.roboflow.com/krzy3chu/sport-fields-pphlq/dataset/6
-  `
+}
+```
 
 - on what data trained
 - how many annotations
