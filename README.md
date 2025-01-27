@@ -14,7 +14,7 @@ Następnie model był uczony danymi pozyskanymi przez nas. Nasz dataset zawiera 
 }
 ```
 
- Jest on dostępny pod [linkiem](https://universe.roboflow.com/krzy3chu/sport-fields-pphlq/dataset/6). Wszystkie znaczniki (bounding boxy) zostały wykonane ręcznie z wykorzystaniem interface'u roboflow. Zdjęcia są przechowywane w formacje ".jpg", a adnotacje w pliku ".txt". Dane do modelu były wczytywane z wykorzystaniem pliku "data.yaml" o następującej strukturze:
+ Jest on dostępny pod [linkiem](https://universe.roboflow.com/krzy3chu/sport-fields-pphlq/dataset/6). Wszystkie znaczniki (bounding boxy) zostały wykonane ręcznie z wykorzystaniem interface'u roboflow. Zdjęcia są przechowywane w formacje ".jpg", a adnotacje w pliku ".txt". Rozmar każdego zdjęcia to 512x512. Zostały one wykonane dla mapy "Bing Aerial 1" i "Google Satelite". Rozdzielczość dla każego zdjęcia to 60mm/px w skali 1:1250. Dane do modelu były wczytywane z wykorzystaniem pliku "data.yaml" o następującej strukturze:
 
 ```
 {
@@ -70,17 +70,14 @@ Wykorzystane biblioteki i ich wersje są w pliku requirements.txt.
 
 
 ## Trained model in ONNX ready for `Deepness` plugin
-- model uploaded to XXX and a LINK_HERE
-- model have to be in the ONNX format, including metadata required by `Deepness` plugin (spatial resolution, thresholds, ...)
-- name of the script used to convert the model to ONNX and add the metadata to it
-
-## Demo instructions and video
-- a short video of running the model in Deepness (no need for audio), preferably converted to GIF
-- what ortophoto to load in QGIS and what physical place to zoom-in. E.g. Poznan 2022 zoomed-in at PUT campus
-- showing the results of running the model
+Gotowy model do wykorzystania w Deepness jest dostępny w tym repozytorium pod nazwą "pl_best_m.onnx"
+Do wyeksportowania modelu do formatu ONNX wykorzystaliśmy komendę `export` z biblioteki ultralytics i wykonaliśmy ją w CLI.
+```
+{
+yolo export model=pl_best_m.pt format=onnx  # creates 'pl_best_m.onnx'
+}
+```
 
 ## People
-- who worked on the project
-
-## Other information
-Feel free to add other information here.
+-Krzysztof Grot
+-Aleksy Józefowski
