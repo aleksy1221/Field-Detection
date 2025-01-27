@@ -44,6 +44,7 @@ Model, który został wykorzystany do tego projektu to YOLO11m pretrenowany na z
 - Skalowanie: powiększanie lub pomniejszanie obrazu.
 - Shear: przekształcenia skośne obrazu.
 - Zmiana nasycenia, odcienia, barw i balansu kolorów.
+
 Model był uczony bez tworzenia przez nas skryptu, zamiast tego wykorzystaliśmy biblitekę ultralytics, która umożliwiła naukę modelu z wykorzystaniem CLI: `yolo train cfg=hyper.yaml`
 Wykorzystana wersja pythona: Python 3.11.9.
 Wykorzystane biblioteki i ich wersje są w pliku requirements.txt.
