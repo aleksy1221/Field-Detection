@@ -1,5 +1,5 @@
 # ZPO Project - Your Deepness Model
-![Przykład działania modelu](readmes/example1.jpg)
+![Przykład działania modelu](readme/example1.jpg)
 AT THE TOP OF THIS README ADD AN IMAGE/GIF WITH EXAMPLE MODEL PREICTION, AS A BANNER
 
 We reecommend making this README pleaseant to read, you can later use it as portfolio `:)`
