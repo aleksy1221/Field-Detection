@@ -52,9 +52,9 @@ Wykorzystane biblioteki i ich wersje są w pliku requirements.txt.
 ## Results
 ### Przykłady poprawnej detekcji boisk
 ![good1](readme/example_good1.jpg)
-![good2](readme/example2_good2.jpg)
-![good3](readme/example3_good3.jpg)
-![good4](readme/example4_good4.jpg)
+![good2](readme/example_good2.jpg)
+![good3](readme/example_good3.jpg)
+![good4](readme/example_good4.jpg)
 
 ### Przykłady niepoprawnej detekcji boisk
 ![bad1](readme/example_bad1.jpg)
