@@ -38,12 +38,12 @@ roboflow:
 
 ## Training
 Model, który został wykorzystany do tego projektu to YOLO11m pretrenowany na zbiorze COCO. Szczegółowe parametry uczenia modelu są opisane w pliku "hyper.yaml". Do stosowania augmentacji wykorzystaliśmy "RandAugment" z biblioteki ultralytics, która dokonuje następujących transformacji:
--Przesunięcia: translacje w poziomie i pionie.
--Rotacje: obrót obrazu o losowy kąt.
--Zmiana jasności i kontrastu.
--Skalowanie: powiększanie lub pomniejszanie obrazu.
--Shear: przekształcenia skośne obrazu.
--Zmiana nasycenia, odcienia, barw i balansu kolorów.
+- Przesunięcia: translacje w poziomie i pionie.
+- Rotacje: obrót obrazu o losowy kąt.
+- Zmiana jasności i kontrastu.
+- Skalowanie: powiększanie lub pomniejszanie obrazu.
+- Shear: przekształcenia skośne obrazu.
+- Zmiana nasycenia, odcienia, barw i balansu kolorów.
 Model był uczony bez tworzenia przez nas skryptu, zamiast tego wykorzystaliśmy biblitekę ultralytics, która umożliwiła naukę modelu z wykorzystaniem CLI: `yolo train cfg=hyper.yaml`
 Wykorzystana wersja pythona: Python 3.11.9.
 Wykorzystane biblioteki i ich wersje są w pliku requirements.txt.
