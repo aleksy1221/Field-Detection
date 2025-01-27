@@ -1,10 +1,25 @@
 # ZPO Project - Your Deepness Model
 ![Przykład działania modelu](readme/example1.jpeg)
-AT THE TOP OF THIS README ADD AN IMAGE/GIF WITH EXAMPLE MODEL PREICTION, AS A BANNER
-
-We reecommend making this README pleaseant to read, you can later use it as portfolio `:)`
 
 ## Dataset
+Model w pierwszej kolejności był trenowany na zbiorze danych [DOTA](https://captain-whu.github.io/DOTA/index.html), którego wymiar został zredukowany do 4 klas: "['basketball', 'football', 'tennis', 'track']". Zawiera on 476 zdjęć w zbiorze "train" i 85 zdjęć w zbiorze "valid". 
+Następnie model był uczony danymi pozyskanymi przez nas. Nasz dataset zawiera on 496 zdjęć w zbiorze "train" i 80 zdjęć w zbiorze "valid". Jest on dostępny pod [linkiem](https://universe.roboflow.com/krzy3chu/sport-fields-pphlq/dataset/6). Wszystkie znaczniki (bounding boxy) zostały wykonane ręcznie z wykorzystaniem interface'u roboflow. Zdjęcia są przechowywane w formacje ".jpg", a adnotacje w pliku ".txt". Dane do modelu były wczytywane z wykorzystaniem pliku "data.yaml" o następującej strukturze:
+`
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 4
+names: ['basketball', 'football', 'tennis', 'track']
+
+roboflow:
+  workspace: krzy3chu
+  project: sport-fields-pphlq
+  version: 6
+  license: MIT
+  url: https://universe.roboflow.com/krzy3chu/sport-fields-pphlq/dataset/6
+  `
+
 - on what data trained
 - how many annotations
 - how the data was prepared (e.g. preprocessed)
