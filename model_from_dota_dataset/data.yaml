@@ -1,0 +1,13 @@
+train: ../dota/train/images
+val: ../dota/valid/images
+test: ../dota/test/images
+
+nc: 4
+names: ['basketball', 'football', 'tennis', 'track']
+
+roboflow:
+  workspace: krzy3chu
+  project: dota-sport-fields
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/krzy3chu/dota-sport-fields/dataset/2
