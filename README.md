@@ -80,5 +80,5 @@ yolo export model=pl_best_m.pt format=onnx  # creates 'pl_best_m.onnx'
 ```
 
 ## People
--Krzysztof Grot
--Aleksy Józefowski
+- Krzysztof Grot
+- Aleksy Józefowski
